@@ -27,15 +27,27 @@
 <table width="70%">
 		<tr>
 			<td>
-				<img src="Image/th.jpg" width="110%" alt="jfisfjo">
+				<img src="Image/th.jpg" width="110%" alt="jfisfjo" id="pic" onmouseover="change1()" onmouseout="change2()">
 			</td>>
 
 			<td>
-				<h1>黃子鑒</h1>
+				<h1 id="h2text">黃子鑒</h1>
 				<h2>Garen</h2>
 			</td>
 		</tr>
 	</table>
+	<script>
+			function change1() {
+  			document.getElementById("pic").src = "Image/apple.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "Image/guava.jpg";
+  			document.getElementById("h2text").innerText = "帥哥黃子鑒";
+		}
+	</script>
+
 
 </body>
 </html>
